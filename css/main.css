@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,800|Roboto');
+/* 
+	font-family: 'Raleway', sans-serif; 
+	font-family: 'Roboto', sans-serif;
+*/
+
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+
+.container {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.btn {
+	
+}
