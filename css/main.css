@@ -23,5 +23,10 @@ li {
 }
 
 .btn {
-	
+	display: block;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
 }
