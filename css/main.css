@@ -27,4 +27,17 @@ li {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif; 
+	background-color: #1de9b6;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.header-2 {
+	color: #061e37;
+	font-family: 'Raleway', sans-serif; 
+	font-size: 45px;
+	font-weight: 400;
+	margin-bottom: 29px;
 }

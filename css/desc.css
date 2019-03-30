@@ -1,0 +1,63 @@
+.desc__text-wrapper {
+	margin: 100px 0;
+	text-align: center;
+}
+.header_mb {
+	margin-bottom: 15px !important;
+}
+.desc__title {
+	color: #b0bec5;
+	font-family: 'Raleway', sans-serif; 
+	font-size: 25px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.desc__text {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 555px;
+	color: #b0bec5;
+	font-family: Raleway;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.6;
+}
+.desc__cards-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 78px;
+}
+.desc__card {
+	text-align: center;
+}
+.card__icon {
+	margin-bottom: 40px;
+}
+.card__title {
+	font-family: 'Raleway', sans-serif; 
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+.card__text  {
+	max-width: 344px;
+	color: #78909c;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.button-wrapper {
+	text-align: center;
+	margin-bottom: 100px;
+}
+.gs__button {
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+
+}

@@ -117,19 +117,18 @@
 	margin-top: 40px;
 }
 .btn_element-1 {
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif !important;
 	padding-left: 42px;
 	padding-right: 42px;
-	background-color: #061e37;
+	background-color: #061e37 !important;
 	margin-right: 30px;
+	font-weight: 400 !important;
 }
 .btn_element-2 {
-	background-color: #ffffff;
-	color: #061e37;
+	background-color: #ffffff !important;
+	color: #061e37 !important;
 	padding-left: 30px;
 	padding-right: 25px;
-	font-weight: 700;
 }
 
 
