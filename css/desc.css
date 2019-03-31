@@ -12,16 +12,7 @@
 	font-weight: 400;
 	margin-bottom: 20px;
 }
-.desc__text {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 555px;
-	color: #b0bec5;
-	font-family: Raleway;
-	font-size: 15px;
-	font-weight: 400;
-	line-height: 1.6;
-}
+
 .desc__cards-wrapper {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -42,7 +33,7 @@
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 25px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 .card__text  {
 	max-width: 344px;
