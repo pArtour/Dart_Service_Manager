@@ -2,6 +2,7 @@
 @import url('header.css');
 @import url('counts.css');
 @import url('services.css');
+@import url('feedbacks.css');
 
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -51,4 +52,7 @@ li {
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 1.6;
+}
+.ta-c {
+	text-align: center;
 }
