@@ -1,0 +1,15 @@
+.feedback-container {
+  background-image: url('../img/bg/team-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+}
+.feedback-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
