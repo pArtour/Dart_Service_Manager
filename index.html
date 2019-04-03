@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
 		<!--Font awesome-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- BXSlider -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 		<!--Normalize-->
 	<link rel="stylesheet" href="libs/normalize.css">
 		<!--Animate-->
@@ -359,17 +361,21 @@
 						<a href="#" class="btn gs__button feedback__button_color">Get started</a>
 					</div>
 					<!-- //feedback__text-wrapper -->
+					<!-- feedback__slider-holder -->
+					<div class="feedback__slider-holder">
+						<span id="go-to-next-holder"><i id="go-to-next" class="material-icons slider__icon">keyboard_arrow_up</i></span>
+						<span id="go-to-prev-holder"><i id="go-to-prev" class="material-icons slider__icon">keyboard_arrow_down</i></span>
 					<!-- feedback__slider-wrapepr -->
-					<div class="feedback__slider-wrapepr">
+						<div class="slider feedback__slider-wrapepr">
 							<div class="slider-block">
 								<img src="img/icons/person-1.png" alt="" class="slider__img">
 								<div class="slider-block__text-wrapper">
 									<h4 class="slider-block__title">John Doe</h4>
 									<p class="slider-block__text">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-									 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-									 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-									 nisi ut aliquip ex ea
+										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+										nisi ut aliquip ex ea
 									</p>
 								</div>
 							</div>
@@ -378,22 +384,43 @@
 								<div class="slider-block__text-wrapper">
 									<h4 class="slider-block__title">Khalessi</h4>
 									<p class="slider-block__text">
-										Lorem ipsum dolor sit amet, 
+										Lorem ipsum dolor sit amet,
 										consectetur adipisicing elit, sed do eiusmod tempor
 										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										 quis nostrud exercitation ullamco laboris
+										quis nostrud exercitation ullamco laboris
 										nisi ut aliquip ex ea
 									</p>
 								</div>
 							</div>
-							<a href="#" class="slider__button go-next">
-								<i class="material-icons slider__icon">keyboard_arrow_up</i>
-							</a>
-							<a href="#" class="slider__button go-prev">
-								<i class="material-icons slider__icon">keyboard_arrow_down</i>
-							</a>
+							<div class="slider-block">
+								<img src="img/icons/person-1.png" alt="" class="slider__img">
+								<div class="slider-block__text-wrapper">
+									<h4 class="slider-block__title">John Erzhan</h4>
+									<p class="slider-block__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+										nisi ut aliquip ex ea
+									</p>
+								</div>
+							</div>
+							<div class="slider-block">
+								<img src="img/icons/person-2.png" alt="" class="slider__img">
+								<div class="slider-block__text-wrapper">
+									<h4 class="slider-block__title">Khalessi Mal</h4>
+									<p class="slider-block__text">
+										Lorem ipsum dolor sit amet,
+										consectetur adipisicing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris
+										nisi ut aliquip ex ea
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- //feedback__slider-wrapepr -->
 					</div>
-					<!-- //feedback__slider-wrapepr -->
+					<!-- //feedback__slider-holder -->
 				</div>
 				<!-- //feedback-content -->
 			</div>
@@ -403,9 +430,13 @@
 	<!-- //feedbacks -->
 
 
-
+	<!-- JQuery 3.3.1 -->
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- JQuery bxslider -->
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<!-- WOW -->
 	<script src="js/wow.js"></script>
+	<!-- Main JS -->
 	<script src="js/main.js"></script>
 </body>
 </html>
