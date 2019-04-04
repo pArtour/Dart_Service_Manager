@@ -20,7 +20,7 @@ $(document).ready(function(){
     nextSelector: ('#go-to-next-holder'),
     prevSelector: ('#go-to-prev-holder'),
     auto:true,
-    pause:3000
+    pause:2000
     
     // pager:true
   });
