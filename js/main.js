@@ -1,11 +1,11 @@
 
 
 $(document).ready(function(){
-  new WOW().init();
+  new WOW().init(); // WOW lib initialization
   $('.service__header-wrapper').on('click', function(){
-    $(this).next('.service__content-wrapper').toggleClass('.service__content-wrapper-active').slideToggle(400);
+    $(this).next('.service__content-wrapper').toggleClass('.service__content-wrapper-active').slideToggle(400); //accordion
   });
-  $('.slider').bxSlider({
+  $('.slider').bxSlider({         // slider
     slideSelector: 'div.slider-block',
     mode:'vertical',
     easing: 'ease-in-out',
@@ -20,8 +20,11 @@ $(document).ready(function(){
     nextSelector: ('#go-to-next-holder'),
     prevSelector: ('#go-to-prev-holder'),
     auto:true,
-    pause:2000
-    
-    // pager:true
+    pause:3000
   });
+  $('.team__photo').on('click', function(){
+    $(this).toggleClass('active');
+    var myIndex = $(this).index();
+    
+  })
 });
