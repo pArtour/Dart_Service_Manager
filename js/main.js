@@ -27,4 +27,17 @@ $(document).ready(function(){
     var myIndex = $(this).index();
     
   })
+
+/*
+  var value = $('.contact__input').each().val()
+  alert(value);
+  $('.contact__input').on('click', function() {
+    $(this).val('');
+    $(this).on('blur', function() {
+      if ($(this).val() = '') {
+        $(this).val(value);
+      }
+    })
+  })
+  */
 });
