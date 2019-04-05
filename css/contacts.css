@@ -1,9 +1,10 @@
 #contacts {
   background-color: #fafafa;
   font-family: 'Raleway',
-  sans-serif;
+    sans-serif;
   padding-bottom: 100px;
 }
+
 .contacts__desc-wrapper {
   max-width: 570px;
   text-align: center;
@@ -17,19 +18,31 @@
   font-size: 15px;
   line-height: 1.6;
 }
+
 .contact__form {
   margin: 0 auto;
   max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 input {
   background-color: #fafafa;
   outline: none;
 
 }
-form input:not(.contacts__send) {
+
+form>* {
+  outline: none;
+}
+
+.contact__input:not(.contacts__send) {
   min-width: 280px;
   border-radius: 5px;
   border: 1px solid #061e37;
@@ -40,41 +53,78 @@ form input:not(.contacts__send) {
   line-height: 2;
   margin-bottom: 20px;
 }
+
+.contact__input::-webkit-input-placeholder {
+  color: #061e37;
+}
+
+.contact__input::-moz-placeholder {
+  color: #061e37;
+}
+
+/* Firefox 19+ */
+.contact__input:-moz-placeholder {
+  color: #061e37;
+}
+
+/* Firefox 18- */
+.contact__input:-ms-input-placeholder {
+  color: #061e37;
+}
+
 .contact__message {
   width: 100%;
 }
+
 .form__buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
+
 .contact__subscribe {
   font-weight: 600;
   margin-left: 25px;
   position: relative;
   cursor: pointer;
 }
+
+.contact__message {
+  resize: none;
+}
+
 .contact__subscribe::before {
   content: '';
   width: 15px;
   height: 15px;
   display: block;
-  border-radius:2px;
   border: 2px solid #061e37;
   position: absolute;
   top: 0;
   left: -25px;
-  -webkit-border-radius:2px;
-  -moz-border-radius:2px;
-  -ms-border-radius:2px;
-  -o-border-radius:2px;
- 
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+
 }
-input[type="checkbox"]:checked + .contact__subscribe::before {
+
+input[type="checkbox"]:checked+.contact__subscribe::before {
   font-family: "Material Icons";
+  font-size: 16px;
   content: "\E876";
   font-weight: 600;
+  position: absolute;
+  text-align: center;
+  line-height: 15px;
+
 }
 
 input[type="checkbox"] {
@@ -84,7 +134,8 @@ input[type="checkbox"] {
 .contacts__send {
   width: auto !important;
   font-weight: 500 !important;
-  border:none;
-  padding: 20px 44px ;
+  border: none;
+  padding: 20px 44px;
 }
+
 /* E876 */
