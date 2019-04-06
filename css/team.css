@@ -34,10 +34,11 @@
 .active {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5),inset 0 0 13px 5px rgba(0, 0, 0, 0.69);
   border: 20px solid #ffffff;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
 }
 
 .team__photo:not(.active):hover {
@@ -50,20 +51,40 @@
 }
 .team__slider-holder {
   display: flex;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .team__member {
   text-align: center;
   color: #061e37;
-	font-family: 'Raleway',
-	sans-serif;  
+  font-family: 'Raleway',	sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
-  display: none;
-  max-width: 645px;
+  /* display: none; 
+  max-width: 645px; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 90px;
+  min-width: 100%;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.team__member-first {
+  transform:translateX(100%);
+}
+.team__member-second {
+  transform:translateX(0%);
+
+}
+.team__member-last {
+  transform:translateX(-100%);
 }
 .team__member__text {
   color: #90a4ae;
@@ -73,9 +94,7 @@
   margin-bottom: 30px;
   margin-top: 20px;
 }
-.team__member.activated {
-  display: block;
-}
+
 .social__list {
   display: flex;
   justify-content: center;

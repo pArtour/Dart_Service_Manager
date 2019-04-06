@@ -46,12 +46,8 @@
 	text-align: center;
 	margin-bottom: 100px;
 }
-.gs__button {
-	/* display: block; */
-	padding-left: 26px;
-	padding-right: 26px;
-	margin-left: auto;
-	margin-right: auto;
-	/* width: 150px; */
-
+.button-wrapper > a {
+	display: block;
+	padding-left: 0;
+	padding-right: 0;
 }

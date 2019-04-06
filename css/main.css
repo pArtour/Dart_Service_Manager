@@ -30,17 +30,39 @@ li {
 .btn {
 	/* display: block; */
 	-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-	        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif; 
+	font-family: 'Raleway', sans-serif;
 	background-color: #1de9b6;
 	color: #ffffff;
 	font-size: 15px;
 	font-weight: 700;
 	text-transform: uppercase;
+	transition: all 0.4s ease-out ;
+	-webkit-transition: all 0.4s ease-out ;
+	-moz-transition: all 0.4s ease-out ;
+	-ms-transition: all 0.4s ease-out ;
+	-o-transition: all 0.4s ease-out ;
+}
+.btn:hover {
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+	transform: translateY(-5px) scale(1.1,1.1);
+	-webkit-transform: translateY(-5px) scale(1.1,1.1);
+	-moz-transform: translateY(-5px) scale(1.1,1.1);
+	-ms-transform: translateY(-5px) scale(1.1,1.1);
+	-o-transform: translateY(-5px) scale(1.1,1.1);
+}
+.gs__button {
+	/* display: block; */
+	padding-left: 26px;
+	padding-right: 26px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 150px;
+
 }
 .header-2 {
 	color: #061e37;

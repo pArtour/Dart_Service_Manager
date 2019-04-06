@@ -22,12 +22,21 @@ $(document).ready(function(){
     auto:true,
     pause:3000
   });
-  $('.team__photo').on('click', function(){
-    $(this).toggleClass('active');
-    var myIndex = $(this).index();
-    
-  })
+  // $('.team__photo').on('click', function(){
+  //   $(this).addClass('active');
 
+  //   var myIndex = $(this).index();
+  // });
+  $('#member-1').on('click', function () {
+    $('.team__member').addClass('team__member-first').removeClass('team__member-second').removeClass('team__member-last');
+  });
+  $('#member-2').on('click', function () {
+    $('.team__member').removeClass('team__member-first').addClass('team__member-second').removeClass('team__member-last');
+    });
+  $('#member-3').on('click', function () {
+    $('.team__member').addClass('team__member-last').removeClass('bteam__member-second').removeClass('team__member-first');
+  });
+});
 /*
   var value = $('.contact__input').each().val()
   alert(value);
@@ -40,4 +49,4 @@ $(document).ready(function(){
     })
   })
   */
-});
+

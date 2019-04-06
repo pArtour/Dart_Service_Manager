@@ -42,11 +42,11 @@
 				<!-- menu -->
 				<nav class="menu">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Service</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Extension</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Help</a></li>
+						<li class="menu__item"><a href="#" class="menu__link__header">Home</a></li>
+						<li class="menu__item"><a href="#" class="menu__link__header">Service</a></li>
+						<li class="menu__item"><a href="#" class="menu__link__header">Extension</a></li>
+						<li class="menu__item"><a href="#" class="menu__link__header">Pricing</a></li>
+						<li class="menu__item"><a href="#" class="menu__link__header">Help</a></li>
 					</ul>
 				</nav>
 				<!-- //menu -->
@@ -67,7 +67,8 @@
 				<!-- //elements__wrapper -->
 				<!-- elements__video__wrapper -->
 				<div class="elements__video__wrapper">
-					<video class="elements__video" src="#" poster="img/bg/video-bg.png"></video>
+					<img src="/img/bg/video__bg.png" alt="Video" class="elements__video">
+					<button class="video__play"></button>
 				</div>
 				<!-- //elements__video__wrapper -->
 			</div>
@@ -451,15 +452,15 @@
 			<div class="team__member-wrapper">
 				<!-- team__photos-holder -->	
 				<div class="team__photos-holder">
-					<img src="img/icons/avatar-1.png" alt="Apashka" class="team__photo">
-					<img src="img/icons/avatar-2.png" alt="Sophie Turner" class="team__photo active">
-					<img src="img/icons/avatar-3.png" alt="Erzhan" class="team__photo">
+					<img id="member-1" src="img/icons/avatar-1.png" alt="Apashka" class="team__photo">
+					<img id="member-2" src="img/icons/avatar-2.png" alt="Sophie Turner" class="team__photo active">
+					<img id="member-3" src="img/icons/avatar-3.png" alt="Erzhan" class="team__photo">
 				</div>
 				<!-- //team__photos-holder -->
 				<!-- team__slider-holder -->
 				<div class="team__slider-holder">
 					<div class="team__member">
-						Sophie Turner
+						Apashka
 						<p class="team__member__text">Lorem ipsum dolor sit amet, 
 							consectetur adipisicing elit, sed do eiusmod tempor incididunt
 							ut labore et doloremagnaLorem ipsum dolor sit amet, 
@@ -474,7 +475,7 @@
 							</ul>
 							<!-- //social__list -->
 					</div>
-					<div class="team__member activated">
+					<div class="team__member">
 						Sophie Turner
 						<p class="team__member__text">Lorem ipsum dolor sit amet,
 							consectetur adipisicing elit, sed do eiusmod tempor incididunt
@@ -491,7 +492,7 @@
 						<!-- //social__list -->
 					</div>
 					<div class="team__member">
-						Sophie Turner
+						Erzhan
 						<p class="team__member__text">Lorem ipsum dolor sit amet,
 							consectetur adipisicing elit, sed do eiusmod tempor incididunt
 							ut labore et doloremagnaLorem ipsum dolor sit amet,
@@ -578,17 +579,17 @@
 					<!-- footer__links-wrapper -->
 					<div class="footer__links-wrapper">
 						<ul class="links__list">
-							<li class="links__item"><a href="#">Privecy Policy</a></li>
-							<li class="links__item"><a href="#">About Us</a></li>
-							<li class="links__item"><a href="#">About Us</a></li>
+							<li class="links__item"><a class="links__anch" href="#">Privecy Policy</a></li>
+							<li class="links__item links__item_before"><a class="links__anch links__anch_before" href="#">About Us</a></li>
+							<li class="links__item links__item_before"><a class="links__anch links__anch_before" href="#">About Us</a></li>
 						</ul>
 						<!-- social__list -->
 						<ul class="social__list">
-							<li class="social__item"><a href="#"><i class="social fab fa-facebook"></i></a></li>
-							<li class="social__item"><a href="#"><i class="social fab fa-twitter"></i></a></li>
-							<li class="social__item"><a href="#"><i class="social fab fa-linkedin-in"></i></a></li>
-							<li class="social__item"><a href="#"><i class="social fab fa-dribbble"></i></a></li>
-							<li class="social__item"><a href="#"><i class="social fab fa-behance"></i></a></li>
+							<li class="social__item"><a href="#"><i class="social social_opacity fab fa-facebook"></i></a></li>
+							<li class="social__item"><a href="#"><i class="social social_opacity fab fa-twitter"></i></a></li>
+							<li class="social__item"><a href="#"><i class="social social_opacity fab fa-linkedin-in"></i></a></li>
+							<li class="social__item"><a href="#"><i class="social social_opacity fab fa-dribbble"></i></a></li>
+							<li class="social__item"><a href="#"><i class="social social_opacity fab fa-behance"></i></a></li>
 						</ul>
 						<!-- //social__list -->
 						<!-- //links__list -->

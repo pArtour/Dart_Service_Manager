@@ -65,16 +65,46 @@
 .menu__item:nth-last-child(1) {
 	margin-right: 0;
 }
-.menu__link {
+.menu__link__header {
 	color: #fff;
 	-webkit-transition: 0.2s all ease-in;
 	transition: 0.2s all ease-in;
-
+	position: relative;
+	-moz-transition: 0.2s all ease-in;
+	-ms-transition: 0.2s all ease-in;
+	-o-transition: 0.2s all ease-in;
 }
-.menu__link:hover {
-	color: #061e37;
+.menu__link__header::before {
+	content: '';
+	display: block;
+	height: 2px;
+	position: absolute;
+	background-color: #061e37;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	transform: scaleX(0);
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	-o-transform: scaleX(0);
+	transition: 0.2s all ease-in;
+	-webkit-transition: 0.2s all ease-in;
+	-moz-transition: 0.2s all ease-in;
+	-ms-transition: 0.2s all ease-in;
+	-o-transition: 0.2s all ease-in;
 }
-
+.menu__link__header:hover {
+	 color: #061e37;
+	 font-weight: 500;
+}
+.menu__link__header:hover::before {
+	transform: scaleX(1);
+	-webkit-transform: scaleX(1);
+	-moz-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	-o-transform: scaleX(1);
+}
 .header__button {
 	color: #fff;
 	background-color: transparent;
@@ -148,33 +178,37 @@
 	padding-right: 25px;
 }
 
-
-
-
-
-
 .elements__video__wrapper {
-	width: 600px;
-	height: 345px;
+	position: relative;
 }
-.elements__video {
-/*	width: 600px;
-	height: 35px;*/
-	background-size:cover;
-	background-repeat: no-repeat;
-/*	background-color: #fff;
-*//*	opacity: 0.9; 
-*/	
-
-
-
-	/*background-image: url('../img/bg/video-bg.png');
-	-webkit-background-size: cover;
-	background-size:cover;
-	background-repeat: no-repeat;
-	background-position: center;*/
+.video__play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	border: none;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
-	border: 1px solid #061e37;
-	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-	        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	background-color: #061e37;
+	outline: none;
+	cursor: pointer;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+}
+.video__play::before {
+	content: "\E037";
+	position: absolute;
+	font-family: "Material Icons";
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 400;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
 }

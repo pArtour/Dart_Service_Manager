@@ -33,7 +33,7 @@
 }
 
 input {
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
   outline: none;
 
 }
@@ -52,6 +52,8 @@ form>* {
   font-weight: 500;
   line-height: 2;
   margin-bottom: 20px;
+  background-color: #fafafa;
+
 }
 
 .contact__input::-webkit-input-placeholder {
@@ -109,11 +111,6 @@ form>* {
   position: absolute;
   top: 0;
   left: -25px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-
 }
 
 input[type="checkbox"]:checked+.contact__subscribe::before {
@@ -136,6 +133,7 @@ input[type="checkbox"] {
   font-weight: 500 !important;
   border: none;
   padding: 20px 44px;
+  cursor: pointer;
 }
 
 /* E876 */
