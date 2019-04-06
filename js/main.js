@@ -23,8 +23,8 @@ $(document).ready(function(){
     pause:3000
   });
   // $('.team__photo').on('click', function(){
-  //   $(this).addClass('active');
-
+  //   $(this).addClass('active').prev().removeClass('active');
+    
   //   var myIndex = $(this).index();
   // });
   $('#member-1').on('click', function () {
