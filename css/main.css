@@ -1,3 +1,4 @@
+@import url('fonts.css');
 @import url('desc.css');
 @import url('header.css');
 @import url('counts.css');
@@ -7,7 +8,10 @@
 @import url('contacts.css');
 @import url('footer.css');
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
-
+/* Normalize */
+@import url('../libs/normalize.css');
+/* Animate */
+@import url('../libs/animate.css');
 
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -26,7 +30,12 @@ li {
 	padding-left: 10%;
 	padding-right: 10%;
 }
-
+@media (max-width:1190px) {
+	.container {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
 .btn {
 	/* display: block; */
 	-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
@@ -46,6 +55,13 @@ li {
 	-moz-transition: all 0.4s ease-out ;
 	-ms-transition: all 0.4s ease-out ;
 	-o-transition: all 0.4s ease-out ;
+}
+@media(max-width:800px) {
+	.btn {
+		padding-top: 17px;
+		padding-bottom: 17px;
+		font-size: 13px;
+	}
 }
 .btn:hover {
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);

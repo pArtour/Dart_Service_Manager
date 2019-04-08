@@ -22,19 +22,23 @@ $(document).ready(function(){
     auto:true,
     pause:3000
   });
-  // $('.team__photo').on('click', function(){
-  //   $(this).addClass('active').prev().removeClass('active');
-    
-  //   var myIndex = $(this).index();
-  // });
   $('#member-1').on('click', function () {
     $('.team__member').addClass('team__member-first').removeClass('team__member-second').removeClass('team__member-last');
+    $(this).addClass('active');
+    $('#member-2').removeClass('active');
+    $('#member-3').removeClass('active');
   });
   $('#member-2').on('click', function () {
     $('.team__member').removeClass('team__member-first').addClass('team__member-second').removeClass('team__member-last');
+    $(this).addClass('active');
+    $('#member-1').removeClass('active');
+    $('#member-3').removeClass('active');
     });
   $('#member-3').on('click', function () {
     $('.team__member').addClass('team__member-last').removeClass('bteam__member-second').removeClass('team__member-first');
+    $(this).addClass('active');
+    $('#member-1').removeClass('active');
+    $('#member-2').removeClass('active');
   });
 });
 /*
