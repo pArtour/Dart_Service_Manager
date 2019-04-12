@@ -125,8 +125,8 @@
 	font-size: 24px;
 	font-weight: 500;
 	transition: all 0.6s ease-in;
-	-webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
 	-ms-transition: all 0.6s ease-in;
 	-o-transition: all 0.6s ease-in;
 	transform: translateX(110%);
@@ -136,7 +136,6 @@
 	-o-transform: translateX(110%);
 	opacity: 0;
 	background: #061e37;
-	opacity:0.7;
 }
 .menu__list__phone-active {
 	transform: translateX(-25%);
@@ -285,8 +284,17 @@
 @media (max-width:750px) {
 	.elements__text {
 		max-width: 510px;
-		margin-right: auto;
-		margin-left: auto;
+		/* margin-right: auto; */
+		/* margin-left: auto; */
+		text-align: left;
+	}
+	.elements__title {
+		font-size: 40px;
+		margin-bottom: 10px;
+		text-align: left;
+		max-width: 380px;
+		/* margin-left: 20px; */
+		/* margin-right: auto; */
 	}
 }
 .elements__buttons__wrapper {

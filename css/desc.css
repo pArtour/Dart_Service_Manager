@@ -22,6 +22,21 @@
 	justify-content: space-between;
 	margin-bottom: 78px;
 }
+@media(max-width:1200px) {
+	.desc__cards-wrapper {
+		display: block;
+	}
+	.desc__text-wrapper {
+		margin-bottom: 50px;
+	}
+	.card__text {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 555px !important;
+		margin-bottom: 25px;
+	}
+}
+
 .desc__card {
 	text-align: center;
 }

@@ -7,6 +7,7 @@
 	display: flex;
 	/*justify-content: space-between;*/
 }
+
 .count_color-1 {
 	background-color: #80d8ff;
 }
@@ -36,6 +37,19 @@
 	font-weight: 900;
 	line-height: 25px;
 	padding: 45px 0px;
+}
+@media(max-width:1200px) {
+	.count {
+		width: 100%;
+	}
+	.counts-wrapper {
+		flex-wrap: wrap;
+	}
+}
+@media(max-width:700px) {
+	.count {
+		padding: 25px 0px;
+	}
 }
 .count__icon {
 	display: block;

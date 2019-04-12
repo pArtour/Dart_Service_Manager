@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
   new WOW().init(); // WOW lib initialization
   $('.service__header-wrapper').on('click', function(){
@@ -40,17 +38,8 @@ $(document).ready(function(){
     $('#member-1').removeClass('active');
     $('#member-2').removeClass('active');
   });
+  $('.menu__phone__button').on('click', function(e){
+    e.preventDefault();
+    $('.menu__list__phone').toggleClass('menu__list__phone-active');
+  });
 });
-/*
-  var value = $('.contact__input').each().val()
-  alert(value);
-  $('.contact__input').on('click', function() {
-    $(this).val('');
-    $(this).on('blur', function() {
-      if ($(this).val() = '') {
-        $(this).val(value);
-      }
-    })
-  })
-  */
-
