@@ -1,5 +1,9 @@
 $(document).ready(function(){
-  new WOW().init(); // WOW lib initialization
+  var wow = new WOW(
+    {
+      mobile: false
+    }
+  ).init(); // WOW lib initialization
   $('.service__header-wrapper').on('click', function(){
     $(this).next('.service__content-wrapper').toggleClass('.service__content-wrapper-active').slideToggle(400); //accordion
   });
