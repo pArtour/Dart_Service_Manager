@@ -8,6 +8,11 @@
 	padding-bottom: 190px;
 	overflow: hidden;
 }
+@media(max-width:1200px) {
+	#header {
+		padding-bottom: 30px;
+	}
+}
 @media(max-width:768px) {
 	.header {
 		padding: 20px 0;
@@ -149,8 +154,12 @@
 	margin-right: 0;
 	margin-top: 16px;
 }
+.menu__list__phone .menu__link__header:hover {
+	color: #fff;
+	font-weight: 500;
+}
 @media(max-width:750px) {
-	.menu {
+	.menu-block {
 		display: none;
 	}
 	.header__button {
@@ -201,6 +210,7 @@
 	 color: #061e37;
 	 font-weight: 500;
 }
+
 .menu__link__header:hover::before {
 	transform: scaleX(1);
 	-webkit-transform: scaleX(1);
@@ -275,6 +285,14 @@
 
 	}
 }
+@media(max-width:400px) {
+	.elements__title {
+		font-size: 35px !important;
+	}
+	.elements__text {
+		font-size: 20px;
+	}
+}
 .elements__text {
 	font-size: 18px;
 	font-weight: 400;
@@ -284,8 +302,6 @@
 @media (max-width:750px) {
 	.elements__text {
 		max-width: 510px;
-		/* margin-right: auto; */
-		/* margin-left: auto; */
 		text-align: left;
 	}
 	.elements__title {
@@ -368,8 +384,12 @@
 	-moz-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
 	-o-transform: translate(-50%,-50%);
+}@media(max-width:400px) {
+	.video__play {
+		width: 40px;
+		height: 40px;
+	}
 }
-
 .video__play::before {
 	content: "\E037";
 	position: absolute;

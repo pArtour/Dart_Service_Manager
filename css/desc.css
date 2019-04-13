@@ -2,6 +2,11 @@
 	margin: 100px 0;
 	text-align: center;
 }
+@media(max-width:800px) {
+	.desc__text-wrapper {
+		margin-top: 40px;
+	}
+}
 .header_mb {
 	margin-bottom: 15px !important;
 }
@@ -25,6 +30,7 @@
 @media(max-width:1200px) {
 	.desc__cards-wrapper {
 		display: block;
+		margin-bottom: 40px;
 	}
 	.desc__text-wrapper {
 		margin-bottom: 50px;
@@ -60,6 +66,11 @@
 .button-wrapper {
 	text-align: center;
 	margin-bottom: 100px;
+}
+@media(max-width:800px) {
+	.button-wrapper {
+		margin-bottom: 40px;
+	}
 }
 .button-wrapper > a {
 	display: block;

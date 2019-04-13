@@ -7,10 +7,21 @@ color:#fff;
 	sans-serif;
 padding: 100px 0 ;
 }
+@media(max-width:769px) {
+  .footer-wrapper {
+    padding: 50px 0;
+
+  }
+}
 .footer__nav-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 55px;
+}
+@media(max-width:700px) {
+  .menu-list {
+    display: block;
+  }
 }
 .menu__link {
   color: #fff;
@@ -21,7 +32,25 @@ padding: 100px 0 ;
 }
 .links__list {
   display: flex;
-
+}
+@media(max-width:700px){
+  .links__list {
+    display: block;
+  }
+  .footer__links-wrapper {
+    flex-flow: row-reverse;
+  }
+  .links__item {
+    margin-right: 0 !important;
+  }
+  .links__item_before::before {
+    display: none !important;
+  }
+}
+@media(max-width:400px) {
+  .social-list {
+    display: block;
+  }
 }
 .links__item {
   margin-right: 44px;

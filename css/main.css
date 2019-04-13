@@ -37,7 +37,7 @@ li {
 	}
 }
 .btn {
-	/* display: block; */
+	display: block;
 	-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
@@ -90,6 +90,11 @@ li {
 @media(max-width:760px) {
 	.header-2 {
 		font-size: 40px;
+	}
+}
+@media(max-width:400px) {
+	.header-2 {
+		font-size: 30px;
 	}
 }
 .desc__p {

@@ -4,7 +4,11 @@
     sans-serif;
   padding-bottom: 100px;
 }
-
+@media(max-width:700px) {
+  #contacts {
+    padding-bottom: 20px;
+  }
+}
 .contacts__desc-wrapper {
   max-width: 570px;
   text-align: center;
@@ -90,7 +94,15 @@ form>* {
           align-items: center;
   width: 100%;
 }
-
+@media(max-width:420px) {
+  .form__buttons-wrapper {
+    display: block;
+    text-align: center;
+  }
+  .contacts__send {
+    margin: 20px auto;
+  }
+}
 .contact__subscribe {
   font-weight: 600;
   margin-left: 25px;
@@ -101,7 +113,14 @@ form>* {
 .contact__message {
   resize: none;
 }
-
+@media(max-width:660px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"]
+    {
+    width: 100%;
+  }
+}
 .contact__subscribe::before {
   content: '';
   width: 15px;
