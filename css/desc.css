@@ -46,6 +46,10 @@
 .desc__card {
 	text-align: center;
 }
+.desc__card:nth-child(2) img {
+	width: 68px;
+	height: 70px;
+}
 .card__icon {
 	margin-bottom: 40px;
 }
